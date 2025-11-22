@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quran Exam Raffle Bowl</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f2f2f2;
+            padding: 60px;
+            font-size: 26px; /* Base font size increased */
+        }
+
+        h1 {
+            color: #2c6e4f;
+            font-size: 42px; /* 30% bigger */
+            margin-bottom: 15px;
+        }
+
+        h2.subtitle {
+            color: #444;
+            font-size: 34px; /* 30% bigger */
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+
+        .box {
+            background: white;
+            margin: 40px auto;
+            padding: 40px; /* bigger padding */
+            border-radius: 18px;
+            width: 510px; /* 30% bigger */
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .box h2 {
+            font-size: 34px; /* bigger box heading */
+        }
+
+        .result {
+            margin-top: 30px;
+            font-size: 34px; /* bigger result text */
+            font-weight: bold;
+            color: #333;
+        }
+
+        button {
+            background: #2c6e4f;
+            color: white;
+            padding: 26px 65px;  /* bigger button */
+            font-size: 34px;      /* bigger button text */
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+
+        button:hover {
+            background: #234d39;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pakistan International School English Section (PISES), Riyadh</h1>
+<h2 class="subtitle">Quran Examination For Grade 1</h2>
+
+<div class="box">
+    <h2>Quran Recitation</h2>
+    <div id="quranResult" class="result">---</div>
+</div>
+
+<div class="box">
+    <h2>Dua</h2>
+    <div id="duaResult" class="result">---</div>
+</div>
+
+<!-- <div class="box">
+    <h2>Tajweed</h2>
+    <div id="tajweedResult" class="result">---</div>
+</div> -->
+
+<!-- BUTTON AT THE BOTTOM -->
+<button onclick="pickItems()">Pick</button>
+
+<script>
+    // You can EDIT these items
+    const quranItems = ["Surah Al Fatiha", "Surah Al Falaq", "Surah An Naas"];
+    const duaItems   = ["Dua After Sneezing", "Dua Entering Toilet", "Dua Before Sleeping", "Dua After Sleeping"];
+    const tajweedItems = [" ", " ", "", " "];
+
+    function randomPick(list) {
+        return list[Math.floor(Math.random() * list.length)];
+    }
+
+    function pickItems() {
+        document.getElementById("quranResult").textContent = randomPick(quranItems);
+        document.getElementById("duaResult").textContent = randomPick(duaItems);
+        document.getElementById("tajweedResult").textContent = randomPick(tajweedItems);
+    }
+</script>
+
+</body>
+</html>
