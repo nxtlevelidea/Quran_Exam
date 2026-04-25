@@ -4,7 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Main Index</title>
+
 <style>
+  :root {
+    --logo-size: 60px; /* Change logo size here */
+  }
+
   body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -13,7 +18,7 @@
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
-    padding: 50px;
+    padding: 30px;
   }
 
   .text-line {
@@ -55,13 +60,15 @@
 
   /* Logo top right */
   .top-right-logo {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
-    width: 100px;
+    width: var(--logo-size);
+    height: auto;
   }
 </style>
 </head>
+
 <body>
 
 <!-- Logo -->
