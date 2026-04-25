@@ -66,6 +66,18 @@
     width: var(--logo-size);
     height: auto;
   }
+
+  /* ✅ FIX FOR MOBILE OVERLAP */
+  @media (max-width: 768px) {
+    #line1 {
+      margin-top: 90px; /* space below fixed logo */
+    }
+
+    :root {
+      --logo-size: 45px; /* optional smaller logo on mobile */
+    }
+  }
+
 </style>
 </head>
 
