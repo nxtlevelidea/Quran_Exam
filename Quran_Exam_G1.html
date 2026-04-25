@@ -6,7 +6,11 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background: #f2f2f2;
+
+            /* BACKGROUND IMAGE FIXED */
+            background: url('school_afternoon.jpg') no-repeat center center fixed;
+            background-size: cover;
+
             padding: 60px;
             font-size: 26px; /* Base font size increased */
         }
@@ -87,7 +91,7 @@
     // You can EDIT these items
     const quranItems = ["Surah Al Kafirun", "Surah Al Nasr"];
     const duaItems   = ["Dua After Wdud #1", "Dua After Wdud #2"];
-    const tajweedItems = [" ", " ", "", " "];
+    const tajweedItems = [" ", " ", "", ""];
 
     function randomPick(list) {
         return list[Math.floor(Math.random() * list.length)];
