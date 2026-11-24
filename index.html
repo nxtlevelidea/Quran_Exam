@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main Index</title>
+
+<style>
+  :root {
+    --logo-size: 60px; /* Change logo size here */
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('school_afternoon.jpg'); /* your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .text-line {
+    margin: 20px 0;
+  }
+
+  /* Example styles for each line */
+  #line1 {
+    font-size: 40px;
+    color: rgb(5, 5, 74);
+  }
+
+  #line2 {
+    font-size: 20px;
+    color: rgb(51, 124, 158);
+  }
+
+  #line3 {
+    font-size: 30px;
+    color: blue;
+  }
+
+  /* Exam Links */
+  .exam-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+
+  .exam-links a:hover {
+    background-color: #2980b9;
+  }
+
+  /* Logo top right */
+  .top-right-logo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: var(--logo-size);
+    height: auto;
+  }
+
+  /* ✅ FIX FOR MOBILE OVERLAP */
+  @media (max-width: 768px) {
+    #line1 {
+      margin-top: 90px; /* space below fixed logo */
+    }
+
+    :root {
+      --logo-size: 45px; /* optional smaller logo on mobile */
+    }
+  }
+
+</style>
+</head>
+
+<body>
+
+<!-- Logo -->
+<img src="logo.png" alt="Logo" class="top-right-logo">
+
+<!-- Static Text Lines -->
+<div class="text-line" id="line1">Aslam o Alikum</div>
+<div class="text-line" id="line2">This project is a research and development initiative conducted by the Quran Department under the supervision of Teacher ACh and the Wing Head of PISES-Junior Wing Afternoon.</div>
+<div class="text-line" id="line3">PISES Quran Exams For Year 2026-2027</div>
+
+<!-- Exam Links -->
+<div class="exam-links">
+  <a href="Quran_Exam_G1.html">Quran Examination for Grade-1</a>
+  <a href="Quran_Exam_G2.html">Quran Examination for Grade-2</a>
+  <a href="Quran_Exam_G3.html">Quran Examination for Grade-3</a>
+  <a href="Quran_Exam_G4.html">Quran Examination for Grade-4</a>
+</div>
+
+</body>
+</html>
